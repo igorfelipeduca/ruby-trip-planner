@@ -7,11 +7,11 @@ class OpenAiService
     @openai_client = OpenAI::Client.new(access_token: ENV['OPENAI_KEY'])
   end
 
-  def call
+  def call(prompt)
     response = @openai_client.chat(
       parameters: {
           model: "gpt-3.5-turbo",
-          messages: [{ role: "user", content: "Me diga um lugar legal para visitar em Salvador"}],
+          messages: [{ role: 'user', content: prompt}],
       })
 
     response.dig('choices', 0, 'message', 'content')
