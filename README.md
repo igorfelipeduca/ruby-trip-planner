@@ -5,9 +5,15 @@
 ### Usando como base o vídeo feito pelo [@deyvin](https://github.com/deyvin), construí essa aplicação que é responsável por fornecer informações sobre uma viagem, como um roteiro de atividades turísticas para serem desenvolvidas durante os x dias de viagem, como o clima da cidade é na época do ano de sua viagem, informações sobre a taxa criminal da cidade e também a melhor forma de se locomover da sua cidade até lá.
 
 ## Instalação
-`gem install sinatra dotenv-rails ruby-openai`
+Rode o comando abaixo para instalar as  dependências do projeto
+```shell
+gem install sinatra dotenv-rails ruby-openai
+```
 
-`bundle`
+Em seguida, rode o comando abaixo para criar a build do bundle do projeto
+```shell
+bundle
+```
 
 ## Usagem
 
@@ -37,4 +43,4 @@ Exemplo de retorno:
 }
 ```
 
-Saiba mais sobre mim pelo meu LinkedIn: https://
+Saiba mais sobre mim pelo meu LinkedIn: https://www.linkedin.com/in/igorfelipeduca/
